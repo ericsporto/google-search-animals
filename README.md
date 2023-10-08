@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Google Search Animals
+
+This project was developed as a technical test in the selection process for the frontend developer position.
+
+## Project Overview
+
+It is a search page, simulating the Google page where, using a fake data generator, we can search for categories of animals.
 
 ## Getting Started
 
-First, run the development server:
+To run the project, you need to clone it using the following command:
+git clone https://github.com/ericsporto/google-search-animals.git
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+After cloning the repository, navigate to the project directory in your terminal and follow these steps:
+Install the project dependencies:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`yarn`
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Start the development server:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+`yarn dev`
 
-## Learn More
+To run the tests:
 
-To learn more about Next.js, take a look at the following resources:
+`yarn test`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Functionalities
+`Home Page`
+The following features were developed on the Home page:
 
-## Deploy on Vercel
+.Layout (Header, Search Field, and Footer)
+.Reusable input component
+.Activation of search and field cleaning buttons via checks
+.Search made via button click or pressing Enter on the keyboard
+.Redirection to results page
+.Full responsiveness of the page and components
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+`Results Page`
+The following features were developed on the results page:
+
+.Layout (Header and results area)
+.Search via pressing enter on the keyboard
+.Skeleton loading for feedback to the user while waiting for requests to be resolved
+.Display of results in a harmonious way and following the previous layout pattern
+.Treatment of results with specific messages
+.Reusable Details Card component appearing when clicking on results
+.Redirection when clicking on the logo to the main page
+.Complete responsiveness, including Header, Results, and Card display of details in the form of a Modal
+
+
+## Technologies Used
+To develop the project, the following technologies and libraries were used:
+
+ReactJs and NextJs for building the frontend
+faker-js/faker for generating fake data
+react-icons for adding icons to the application
+zustand for state management
+vitest for testing
+TypeScript for type checking and reducing the risk of bugs in production
+
+
+## The project is deployed on Vercel and can be accessed at the following URL:
+
+`https://google-search-animals.vercel.app/`
+
+## Author
+Developed by Eric de Souza Porto Carvalho
