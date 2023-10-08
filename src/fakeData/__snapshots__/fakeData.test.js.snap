@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`reverse array > should reverse the array 1`] = `
+[
+  "Dynamic Optimization Orchestrator",
+  "Debitis perspiciatis territo tepidus termes undique certe arcus charisma.",
+  "Spectacled bear",
+]
+`;
