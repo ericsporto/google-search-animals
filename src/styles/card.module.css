@@ -1,0 +1,68 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+
+  @media (min-width: 1000px) {
+    background-color: transparent;
+    right: 5%;
+    width: 0%;
+  }
+}
+
+.card {
+  border: 1px solid #e2dede;
+  border-radius: 8px;
+  padding: 15px !important;
+
+  @media (max-width: 1000px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 340px;
+    background: white;
+  }
+
+  @media (min-width: 1000px) {
+    position: absolute;
+    top: 13%;
+    right: 6%;
+    width: 380px;
+    height: 350px;
+    background: transparent;
+  }
+}
+
+.img {
+  width: 100%;
+  height: 100% !important;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px 0px !important;
+  gap: 10px;
+}
+
+.information p {
+  font-size: 12px !important;
+  color: #9b9595 !important;
+  font-weight: 700;
+}
+.information h4 {
+  font-size: 18px !important;
+  color: #4f4949 !important;
+}
+.information h5 {
+  font-size: 14px !important;
+  color: #9b9595;
+}
