@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@faker-js/faker": "^8.1.0",
-    "@types/lodash.debounce": "^4.0.7",
-    "lodash.debounce": "^4.0.8",
     "next": "13.5.4",
     "react": "^18",
     "react-dom": "^18",
